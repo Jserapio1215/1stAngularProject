@@ -35,6 +35,14 @@ app.controller("GameController",['$scope','$timeout',function($scope,$timeout){
 	}
 
 	$scope.letterChosen = function(){
+		if($scope.input.letter.length > 1) {
+			alert("Please only choose 1 letter.");
+			return
+		} else if ($scope.input.letter.length === 0) {
+			alert("Please choose a letter.");
+			return
+		}
+
 		for (var i = 0; i < $scope.correctLettersChosen.length; i++) {
 			if($scope.correctLettersChosen[i].toUpperCase() == $scope.input.letter.toUpperCase()) {
 				$scope.input.letter = "";
