@@ -1,0 +1,36 @@
+body {
+	max-width: 800px;
+    margin: 0px auto;
+    background-image: url(img/SeahawkStadium.jpg);
+    background-repeat: no-repeat;
+    /*background-size: 1300px;*/
+}
+#mainHeader {
+	color: blue;
+	text-align: center;
+}
+#mainContent {
+	background-color: rgba(229, 229, 229, 0.4);
+    padding-left: 200px;
+}
+.text {
+	color:#fff;
+	padding: 10px 0px;
+	font-size: 28px;
+}
+.winner, .loser {
+	display: none;
+	color:#fff;
+	padding: 10px 0px;
+	font-size: 28px;
+}
+.showResult {
+	display: block !important;
+}
+a {
+	color: #fff;
+	font-weight: bold;
+}
+a:visited {
+	color: #fff;
+}
